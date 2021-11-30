@@ -4,28 +4,32 @@ import "./Nav.css";
 
 function Nav(){
     return(
-        <nav className="navbar">
-            <ul className="navbar_links">
-                <li className="navbar_item">
-                    <a href="/" className="navbar_link">OutDrafted</a>
-                </li>
-                <li className="navbar_item">
-                    <a href="/" className="navbar_link">Champions du moment</a>
-                </li>
-                <li className="navbar_item">
-                    <a href="/" className="navbar_link">Meilleures compositions</a>
-                </li>
-                <li className="navbar_item">
-                    <a href="/" className="navbar_link">À propos</a>
-                </li>
-                <li className="navbar_item">
-                    <a href="/" className="navbar_link">Mentions Légales</a>
-                </li>
-            </ul>
-            <button className="burger">
-                <span className="burger-bar"></span>
-            </button>
-        </nav>
+        <div className="container_header">
+            <nav className="navbar">
+                <ul className="navbar_links">
+                    <li className="navbar_void"></li>
+                    <li className="navbar_item"  >
+                        <a href="/" className="navbar_link">OUTDRAFTED</a>
+                    </li>
+                    <div id="outline"></div>
+                    <li className="navbar_item"  >
+                        <a href="/" className="navbar_link">CHAMPIONS DU MOMENT</a>
+                    </li>
+                    <div id="outline"></div>
+                    <li className="navbar_item" >
+                        <a href="/" className="navbar_link">MEILLEURES COMPOSITIONS</a>
+                    </li>
+                    <div id="outline"></div>
+                    <li className="navbar_item" >
+                        <a href="/" className="navbar_link">À PROPOS</a>
+                    </li>
+                    <div id="outline"></div>
+                    <li className="navbar_item">
+                        <a href="/" className="navbar_link">MENTIONS LÉGALES</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     );
 }
 
