@@ -1,9 +1,11 @@
+@import url('../global-variable.css');
+
 .container_nav {
     width: 40vmin;
     height: 100vh;
     position:absolute;
-    background-color: #1A1F25;
-    border-right: #F4CD88 2px solid;
+    background-color: var(--grey-nav);
+    border-right: var(--gold) 2px solid;
 
     left: -100vmin;
     transition: left 0.8s ease;
@@ -59,7 +61,7 @@
 .navbar_outline {
     width: 35vmin;
     height: 0.1vmin;
-    background-color: #F4CD88;
+    background-color: var(--gold);
 }
 
 
