@@ -1,4 +1,4 @@
-.container_header {
+.container_nav {
     width: 40vmin;
     height: 100vh;
     position:absolute;
@@ -9,7 +9,7 @@
     transition: left 0.8s ease;
 }
 
-.container_header.is-active-menu {
+.container_nav.is-active-menu {
     left: 0;
     transition: left 0.8s ease;
 }
@@ -56,7 +56,7 @@
     align-items: center;
 }
 
-.outline {
+.navbar_outline {
     width: 35vmin;
     height: 0.1vmin;
     background-color: #F4CD88;

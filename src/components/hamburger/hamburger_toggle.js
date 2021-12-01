@@ -1,6 +1,6 @@
 window.onload=function() {
   var hamburger = document.querySelector(".hamburger");
-  var menu = document.querySelector(".container_header");
+  var menu = document.querySelector(".container_nav");
   var toogle = this.document.querySelector(".toogle_off_nav")
 
   hamburger.addEventListener("click", function() {

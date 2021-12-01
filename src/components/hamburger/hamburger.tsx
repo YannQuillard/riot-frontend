@@ -1,6 +1,6 @@
 import React from "react";
-import "./Nav.css";
-import "./Nav.tsx";
+import "../navigation+toogle/Nav.css";
+import "../navigation+toogle/Nav.tsx";
 import "./hamburger.css";
 import "./hamburger_toggle";
 

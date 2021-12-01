@@ -1,6 +1,6 @@
 import React from "react";
-import "./hamburger.tsx";
-import "./hamburger_toggle";
+import "../hamburger/hamburger.tsx";
+import "../hamburger/hamburger_toggle";
 import "./toogle_off_navbar.css";
 
 

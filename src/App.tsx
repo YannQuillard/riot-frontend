@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header';
-import Nav from './components/Nav';
-import TON from './components/toogle_off_navbar'
+import Header from './components/header/header';
+import Nav from './components/navigation+toogle/Nav';
+import TON from './components/navigation+toogle/toogle_off_navbar'
 
 function App() {
   return (
