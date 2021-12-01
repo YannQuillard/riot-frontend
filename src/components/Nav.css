@@ -56,8 +56,10 @@
     align-items: center;
 }
 
-#outline {
+.outline {
     width: 35vmin;
     height: 0.1vmin;
     background-color: #F4CD88;
 }
+
+
