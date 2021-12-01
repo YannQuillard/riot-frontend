@@ -4,6 +4,7 @@ import Header from './components/header/header';
 import Nav from './components/navigation+toogle/Nav';
 import TON from './components/navigation+toogle/toogle_off_navbar'
 import Inscription from './components/Home-inscription/home-inscription';
+import Tabs from './components/Acceuil - Tabs/tabs.js';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Nav />
         <Header />
         <Inscription />
+        <Tabs />
       </div>
     </body>
   );
