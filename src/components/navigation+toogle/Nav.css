@@ -9,6 +9,8 @@
 
     left: -100vmin;
     transition: left 0.8s ease;
+
+    z-index: 2;
 }
 
 .container_nav.is-active-menu {

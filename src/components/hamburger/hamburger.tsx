@@ -7,8 +7,8 @@ import "./hamburger_toggle";
 function Hamburger(){
     return(
         <button className="hamburger hamburger--spring" type="button">
-                <span className="hamburger-box">
-                <span className="hamburger-inner"></span>
+            <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
             </span>
         </button>
     );

@@ -7,7 +7,6 @@
 
     display:flex;
     justify-content: center;;
-
 }
 
 .background {
@@ -68,3 +67,4 @@
     background-color: var(--gold);
     color: var(--black-header);
 }
+
