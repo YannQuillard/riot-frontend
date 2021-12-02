@@ -1,4 +1,4 @@
-@import url(../global-variable.css);
+@import url(../../global-variable.css);
 
 .container_PlayerFav {
     width: 40%;
@@ -38,27 +38,27 @@
     opacity: 100%;
 }
 .toplane_Fav_Icon {
-    background: url('../../assets/toplane-logo.png') no-repeat;
+    background: url('../../../assets/toplane-logo.png') no-repeat;
     background-size: contain;
 }
 
 .jungle_Fav_Icon {
-    background: url('../../assets/jungle-logo.png') no-repeat;
+    background: url('../../../assets/jungle-logo.png') no-repeat;
     background-size: contain;
 }
 
 .middlane_Fav_Icon {
-    background: url('../../assets/middlane-logo.png') no-repeat;
+    background: url('../../../assets/middlane-logo.png') no-repeat;
     background-size: contain;
 }
 
 .botlane_Fav_Icon {
-    background: url('../../assets/botlane-logo.png') no-repeat;
+    background: url('../../../assets/botlane-logo.png') no-repeat;
     background-size: contain;
 }
 
 .support_Fav_Icon {
-    background: url('../../assets/support-logo.png') no-repeat;
+    background: url('../../../assets/support-logo.png') no-repeat;
     background-size: contain;
 }
 
@@ -70,7 +70,7 @@
     margin: 2vmin;
     width: 6vmin;
     height: 6vmin;
-    background: url('../../assets/Favplus_icon.png') no-repeat;
+    background: url('../../../assets/Favplus_icon.png') no-repeat;
     background-size: contain;
     opacity:50%;
 }
