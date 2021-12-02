@@ -1,9 +1,9 @@
 @import url('../global-variable.css');
 
 .container_nav {
-    width: 40vmin;
-    height: 100vh;
     position:absolute;
+    width: 40vmin;
+    height: 150vmin;
     background-color: var(--grey-nav);
     border-right: var(--gold) 2px solid;
 

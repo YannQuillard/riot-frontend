@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./tabs.css";
+import Accueil_CC from "../Accueil - ChampionCard/accueil_championCard";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -9,7 +10,7 @@ function Tabs() {
   };
 
   return (
-    <div className="container_acceuil_tabs">
+    <div className="container_accueil_tabs">
       <div className="bloc-tabs">
         <button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} id="toplane" onClick={() => toggleTab(1)}></button>
         <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} id="jungle" onClick={() => toggleTab(2)}></button>
@@ -21,11 +22,7 @@ function Tabs() {
       <div className="content-tabs">
         <div  className={toggleState === 1 ? "content  active-content" : "content"}>
           <h1>Champions avec le plus haut winrate en <span id="w_l_lane"> Toplane</span></h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
-          </p>
+          <Accueil_CC />
         </div>
         <div className={toggleState === 2 ? "content  active-content" : "content"}>
           <h1>Champions avec le plus haut winrate en <span id="w_l_lane"> Jungle</span></h1>

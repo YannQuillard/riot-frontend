@@ -1,20 +1,21 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header/header';
-import Nav from './components/navigation+toogle/Nav';
-import TON from './components/navigation+toogle/toogle_off_navbar'
-import Inscription from './components/Home-inscription/home-inscription';
-import Tabs from './components/Acceuil - Tabs/tabs.js';
+import Accueil from './pages/Accueil';
+import Favorites from './pages/Favorites';
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import HUD from './pages/HUD';
 
 function App() {
   return (
     <body>
       <div className="App">
-        <TON />
-        <Nav />
-        <Header />
-        <Inscription />
-        <Tabs />
+        <Router >
+          <HUD />
+          <Routes>
+          <Route path="/" element={<Accueil />} /> 
+          <Route path="/Favorites" element={<Favorites />} /> 
+          </Routes>
+        </Router>
       </div>
     </body>
   );

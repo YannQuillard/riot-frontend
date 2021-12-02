@@ -9,11 +9,11 @@ function Nav(){
                 <ul className="navbar_links">
                     <li className="navbar_void"></li>
                     <li className="navbar_item"  >
-                        <a href="/" className="navbar_link">OUTDRAFTED</a>
+                        <a href="/" className="navbar_link">ACCUEIL</a>
                     </li>
                     <div className="navbar_outline"></div>
                     <li className="navbar_item"  >
-                        <a href="/" className="navbar_link">CHAMPIONS DU MOMENT</a>
+                        <a href="/Favorites" className="navbar_link">VOS FAVORIS</a>
                     </li>
                     <div className="navbar_outline"></div>
                     <li className="navbar_item" >
