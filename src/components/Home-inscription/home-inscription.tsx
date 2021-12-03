@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home-inscription.css";
 
 
@@ -9,7 +10,7 @@ function Inscription(){
             <p className="follow_your_game"> Suivez votre partie en direct </p>
             <form className="player_id"> 
                 <input className="player_id_input" type="text" placeholder="Pseudo League of Legends EUW"></input>
-                <input className="player_id_send" type="submit" value="Go !"></input>
+                <a className="player_id_send" type="submit" href="./PickLane"> Go !</a>
             </form>
         </div>
     );

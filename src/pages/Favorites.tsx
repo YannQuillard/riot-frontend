@@ -6,11 +6,13 @@ import FavDisplay from '../components/Favorites - Fav/Favorites - ChampDisplay/f
 import PlayerFav from '../components/Favorites - Fav/Favorites-PlayerFav/favorites-playerFav';
 import FavNav from '../components/Favorites - Fav/Favorites - NavBar/favorites-navbar';
 import FavNext from '../components/Favorites - Fav/Favorites - Next Button/favorites-next';
+import HUD from './HUD';
 
 function Favorites() {
   return (
     <body>
       <div className="App">
+        <HUD />
         <FavHeader />
         <div className="FavGlobal"> 
           <PlayerFav />

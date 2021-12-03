@@ -51,6 +51,7 @@
 }
 
 .player_id_send {
+    position: absolute;
     width: 15vmin;
     margin-left: 5vmin;
     height: 5.5vmin;
@@ -62,6 +63,8 @@
 
     color: var(--gold);
     font-size: 2.5vmin;
+    text-decoration: none;
+    line-height: 5vmin;
 }
 
 .player_id_send:hover {

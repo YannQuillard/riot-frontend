@@ -1,0 +1,170 @@
+@import url('../global-variable.css');
+
+.container_picklane_tabs {
+  display: flex;
+  position: relative;
+  width: 75%;
+  height: 75vmin;
+  background: #051015;
+  word-break: break-all;
+}
+  
+.picklane_tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Pick_tabs {
+  height: 10vmin;
+  padding : 5vmin;
+  text-align: center;
+  width: 10vmin;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  opacity: 25%;
+}
+  
+.Pick_active-tabs  {
+  border-right: 3px var(--gold) solid;
+  opacity: 100%;
+}
+    
+button {
+  border: none;
+}
+
+.content-tabs {
+  flex-grow : 1;
+}
+
+.pick_content {
+  background: #051015;
+  padding: 2vmin;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.picklane_lane {
+  margin-left: 3vmin;
+  font-size: 3.5vmin;
+  text-align: left;
+  color: var(--gold);
+}
+
+.active_pick_content {
+  display: block;
+}
+
+#pick_toplane {position: absolute; top: 0%;}
+#pick_jungle {position: absolute; top: 19%;}
+#pick_midd {position: absolute; top: 39%;}
+#pick_botlane {position: absolute; top: 59%;}
+#pick_support {position: absolute; top: 79%;}
+
+#toplane {
+  background: url('../../assets/toplane-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+#jungle {
+  background: url('../../assets/jungle-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+#middlane {
+  background: url('../../assets/middlane-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+#botlane {
+  background: url('../../assets/botlane-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+#support {
+  background: url('../../assets/support-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+.lane_img {
+    position: absolute;
+    left: 45%;
+    width: 75%;
+    height: 100%;
+    background: url('../../assets/LoL\ Map.png') no-repeat;
+    background-size: contain;
+}
+
+#top_map {
+    background: url('../../assets/Top_map.png') no-repeat;
+    background-size: contain;
+}
+
+#jungle_map {
+    background: url('../../assets/jungle_map.png') no-repeat;
+    background-size: contain;
+}
+
+#mid_map {
+    background: url('../../assets/Mid_map.png') no-repeat;
+    background-size: contain;
+}
+
+#bot_map {
+    background: url('../../assets/bot_map.png') no-repeat;
+    background-size: contain;
+}
+
+#sup_map {
+    background: url('../../assets/Sup_map.png') no-repeat;
+    background-size: contain;
+}
+
+.confirm_lane {
+  position: absolute;
+  width: 15vmin;
+  height: 4vmin;
+  background: var(--background);
+  border: 2px var(--gold) solid;
+  top: 15%;
+  left: 17.4%;
+
+  font-size: 1.8vmin;
+  text-decoration: none;
+  color: var(--gold);
+  line-height: 3.7vmin;
+}
+
+.confirm_lane:hover {
+  color: var(--background);
+  background: var(--gold);
+}
+
+.confirm_lane_top{
+  top: 10%;
+}
+
+.confirm_lane_jungle{
+  top: 30%;
+}
+
+.confirm_lane_middlane {
+  top: 50%;
+}
+
+.confirm_lane_botlane {
+  top: 70%;
+}
+
+.confirm_lane_support {
+  top: 90%;
+}

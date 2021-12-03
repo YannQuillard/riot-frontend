@@ -1,7 +1,8 @@
 .Fav_Next {
+    position: absolute;
     width: 25vmin;
-    margin-left: 68vmin;
-    margin-top: 10vmin;
+    top: 85%;
+    left: 80%;
     height: 5.5vmin;
     cursor: pointer;
 
@@ -11,10 +12,13 @@
 
     color: var(--gold);
     font-size: 2vmin;
+    text-decoration: none;
+    line-height: 5vmin;
 }
 
 .Fav_Next:hover {
     background-color: var(--gold);
     color: var(--black-header);
 }
+
 
