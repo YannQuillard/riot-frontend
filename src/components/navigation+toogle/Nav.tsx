@@ -20,12 +20,8 @@ function Nav(){
                         <a href="/" className="navbar_link">MEILLEURES COMPOSITIONS</a>
                     </li>
                     <div className="navbar_outline"></div>
-                    <li className="navbar_item" >
-                        <a href="/" className="navbar_link">À PROPOS</a>
-                    </li>
-                    <div className="navbar_outline"></div>
                     <li className="navbar_item">
-                        <a href="/" className="navbar_link">MENTIONS LÉGALES</a>
+                        <a href="/LegalMentions" className="navbar_link">MENTIONS LÉGALES</a>
                     </li>
                 </ul>
             </nav>
