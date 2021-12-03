@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #13171b;
+  background-color: #051015 ;
 }
 
 
@@ -40,4 +40,6 @@ body {
   border-radius: 500px;
 }
 
-
+#HUD_NO_DISPLAY {
+  display: none;
+}
