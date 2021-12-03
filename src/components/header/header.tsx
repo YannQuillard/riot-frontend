@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="container_header">
         <div className="hamburger-icon"><Hamburger /></div>
-        <div className="header-img"></div>
+        <a href="./" className="header-img"></a>
     </div>
   )
 }

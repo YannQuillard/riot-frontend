@@ -1,0 +1,88 @@
+@import url(../../global-variable.css);
+
+.container_FavNav {
+    width: 100%;
+    margin-bottom: 5vmin;
+}
+
+.PlayerFav_Text {
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    margin: 0;
+    font-size: 4.5vmin;
+    color:white;
+}
+
+.container_FavNav_Nav {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.FavNav_Search_Icon {
+    margin: 1vmin;
+    margin-left: 5vmin;
+    width: 1.5vmin;
+    height: 1.5vmin;
+    background:url('../../../assets/loupe.svg') no-repeat;
+    background-size: contain;
+}
+
+.FavNav_Seach {
+    width: 30vmin;
+    height: 2vmin;
+    margin-right: 3vmin;
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--gold) 1px solid;
+    font-size: 1.5vmin;
+    color:white;
+}
+
+.FavNav_Seach:focus {
+    outline:none;
+}
+
+.FavNav_Icon {
+    width: 2vmin;
+    height: 2vmin;
+    margin-left: 1vmin;
+    margin-right: 1vmin;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.FavNav_Icon_Active  {
+    opacity: 100%;
+  }
+
+#FavNav_toplane {
+    background: url('../.././../assets/toplane-logo.png') no-repeat;
+    background-size: contain;
+}
+
+#FavNav_jungle {
+    background: url('../.././../assets/jungle-logo.png') no-repeat;
+    background-size: contain;
+}
+
+#FavNav_middlane {
+    background: url('../.././../assets/middlane-logo.png') no-repeat;
+    background-size: contain;
+}
+
+#FavNav_botlane {
+    background: url('../.././../assets/botlane-logo.png') no-repeat;
+    background-size: contain;
+}
+
+#FavNav_support {
+    background: url('../.././../assets/support-logo.png') no-repeat;
+    background-size: contain;
+}
+
+#FavNav_all {
+    background: url('../.././../assets/all.png') no-repeat;
+    background-size: contain;
+}
+

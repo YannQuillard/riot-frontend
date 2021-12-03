@@ -6,25 +6,26 @@
     border-bottom: var(--gold) 2px solid;
 
     display:flex;
-    justify-content: center;;
+    justify-content: center;
 }
 
 .background {
     width: 100%;
     height: auto;
     background: url('../../assets/Ashe_background.png') no-repeat;
+    background-size: cover;
     background-position-y: -10vmin;
 }
 
 .follow_your_game {
-    position: fixed;
+    position: absolute;
     top: 20vmin;
     font-size: 4.5vmin;
     color:white;
 }
 
 .player_id {
-    position: fixed;
+    position: absolute;
     top: 35vmin;
 }
 

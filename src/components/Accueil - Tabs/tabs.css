@@ -1,0 +1,98 @@
+@import url('../global-variable.css');
+
+.container_accueil_tabs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 75%;
+  height: 75vmin;
+  background: var(--background);
+  margin: 5vmin auto 0;
+  word-break: break-all;
+}
+  
+.bloc-tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  height: 15vmin;
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+  text-align: center;
+  width: 10vmin;
+  cursor: pointer;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  opacity: 50%;
+}
+  
+.active-tabs  {
+  border-bottom: 3px var(--gold) solid;
+  opacity: 100%;
+}
+    
+button {
+  border: none;
+}
+
+.content-tabs {
+  flex-grow : 1;
+}
+
+.content {
+  background: var(--background);
+  padding: 2vmin;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  justify-content: center;
+}
+
+.content h1 {
+  padding: 0px 0 5px 0px;
+  font-size: 3.5vmin;
+  color: white;
+}
+
+#w_l_lane {
+  color: var(--gold);
+}
+
+.active-content {
+  display: block;
+}
+
+#toplane {
+  background: url('../../assets/toplane-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+#jungle {
+  background: url('../../assets/jungle-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+#middlane {
+  background: url('../../assets/middlane-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+#botlane {
+  background: url('../../assets/botlane-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+
+#support {
+  background: url('../../assets/support-logo.png') no-repeat;
+  background-size: 7.5vmin;
+  background-position: center;
+}
+

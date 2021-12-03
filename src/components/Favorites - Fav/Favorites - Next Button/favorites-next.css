@@ -1,0 +1,20 @@
+.Fav_Next {
+    width: 25vmin;
+    margin-left: 68vmin;
+    margin-top: 10vmin;
+    height: 5.5vmin;
+    cursor: pointer;
+
+    background-color:transparent;
+    border: var(--gold) 2px solid;
+    border-radius: 5vmin;
+
+    color: var(--gold);
+    font-size: 2vmin;
+}
+
+.Fav_Next:hover {
+    background-color: var(--gold);
+    color: var(--black-header);
+}
+

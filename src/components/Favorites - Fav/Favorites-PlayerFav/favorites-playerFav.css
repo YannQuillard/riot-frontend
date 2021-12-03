@@ -1,0 +1,80 @@
+@import url(../../global-variable.css);
+
+.container_PlayerFav {
+    width: 40%;
+    height: 100%;
+    border-right: 2px var(--gold) solid;
+}
+
+.PlayerFav_Text {
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    margin: 0;
+    font-size: 4.5vmin;
+    color:white;
+}
+
+.Fav_Outline {
+    width: 70%;
+    height: 0.3vmin;
+    background: linear-gradient(90deg, rgba(244,205,136,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.PlayerFav_flexbox {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 12vmin;
+}
+.PlayerFav_flexbox:hover {
+    background-color: var(--grey-nav);
+}
+
+.Fav_Icon {
+    margin: 5vmin;
+    width: 7vmin;
+    height: 7vmin;
+    opacity: 100%;
+}
+.toplane_Fav_Icon {
+    background: url('../../../assets/toplane-logo.png') no-repeat;
+    background-size: contain;
+}
+
+.jungle_Fav_Icon {
+    background: url('../../../assets/jungle-logo.png') no-repeat;
+    background-size: contain;
+}
+
+.middlane_Fav_Icon {
+    background: url('../../../assets/middlane-logo.png') no-repeat;
+    background-size: contain;
+}
+
+.botlane_Fav_Icon {
+    background: url('../../../assets/botlane-logo.png') no-repeat;
+    background-size: contain;
+}
+
+.support_Fav_Icon {
+    background: url('../../../assets/support-logo.png') no-repeat;
+    background-size: contain;
+}
+
+.toplane_Fav_Icon:hover, .jungle_Fav_Icon:hover, .middlane_Fav_Icon:hover, .botlane_Fav_Icon:hover, .support_Fav_Icon:hover {
+    cursor: pointer;
+}
+
+.Fav{
+    margin: 2vmin;
+    width: 6vmin;
+    height: 6vmin;
+    background: url('../../../assets/Favplus_icon.png') no-repeat;
+    background-size: contain;
+    opacity:50%;
+}
+
+.Fav:hover {
+    opacity:100%;
+}

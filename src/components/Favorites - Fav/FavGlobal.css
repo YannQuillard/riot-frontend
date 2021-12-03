@@ -1,0 +1,9 @@
+.FavGlobal {
+    display: flex;
+}
+
+.FavRight {
+    width: 60%;
+    max-height: 72vmin;
+    text-align: center;
+}

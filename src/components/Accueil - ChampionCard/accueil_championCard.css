@@ -1,0 +1,38 @@
+@import url('../global-variable.css');
+
+.container_accueil_champion_card{
+
+    margin-top: 7vmin;
+    height: 25vmin;
+
+    margin: auto;
+}
+
+.champion_ranking {
+    position: absolute;
+    font-size: 7vmin;
+    margin:0;
+    margin-top: 5vmin;
+    left: 5vmin;
+    color: var(--gold);
+}
+
+.champion_icon{
+    position:absolute;
+    width: 20vmin;
+    height: 20vmin;
+    left: 15vmin;
+    background: url("../../assets/teemo_icon.jpg") no-repeat;
+    background-size: cover;
+
+    border: 2px var(--gold) solid;
+}
+
+.champion_winrate {
+    position: absolute;
+    margin:0;
+    margin-top: 5vmin;
+    left: 45vmin;
+    font-size: 7vmin;
+    color: #34F08A;
+}
