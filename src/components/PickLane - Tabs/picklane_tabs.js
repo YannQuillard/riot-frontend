@@ -24,22 +24,27 @@ function PicklaneTabs() {
         </div>
         <div  className={toggleState === 1 ? "pick_content  active_pick_content" : "pick_content"}>
           <h1 class="picklane_lane" id="pick_toplane">TOPLANE</h1>
+          <a className="confirm_lane confirm_lane_top" type="submit" href="./">CONFIRMER</a>
           <div className="lane_img" id="top_map"></div>
         </div>
         <div  className={toggleState === 2 ? "pick_content  active_pick_content" : "pick_content"}>
           <h1 class="picklane_lane" id="pick_jungle">JUNGLE</h1>
+          <a className="confirm_lane confirm_lane_jungle" type="submit" href="./">CONFIRMER</a>
           <div className="lane_img" id="jungle_map"></div>
         </div>
         <div  className={toggleState === 3 ? "pick_content  active_pick_content" : "pick_content"}>
           <h1 class="picklane_lane" id="pick_midd">MIDLANE</h1>
+          <a className="confirm_lane confirm_lane_middlane" type="submit" href="./">CONFIRMER</a>
           <div className="lane_img" id="mid_map"></div>
         </div>
         <div  className={toggleState === 4 ? "pick_content  active_pick_content" : "pick_content"}>
           <h1 class="picklane_lane" id="pick_botlane">BOTLANE</h1>
+          <a className="confirm_lane confirm_lane_botlane" type="submit" href="./">CONFIRMER</a>
           <div className="lane_img" id="bot_map"></div>
         </div>
         <div  className={toggleState === 5 ? "pick_content  active_pick_content" : "pick_content"}>
           <h1 class="picklane_lane" id="pick_support">SUPPORT</h1>
+          <a className="confirm_lane confirm_lane_support" type="submit" href="./">CONFIRMER</a>
           <div className="lane_img" id="sup_map"></div>
         </div>
       </div>    

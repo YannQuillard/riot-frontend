@@ -6,9 +6,9 @@ import "./picklane-header.css";
 function PickLaneHeader(){
     return(
         <div className="container_PickLane_Header">
-            <p className="background_PickLane_Header_Text"> CHOISSISSEZ VOTRE RÔLE </p>
+            <p className="background_PickLane_Header_Text"> CHOISISSEZ VOTRE RÔLE </p>
             <div className="background_PickLane_Header"></div>
-            <a className="Global_Exit" type="submit" href="./">Mettre fin à la session</a>
+            <a className="Global_Exit" type="submit" href="./">METTRE FIN À LA SESSION</a>
         </div>
     );
 }

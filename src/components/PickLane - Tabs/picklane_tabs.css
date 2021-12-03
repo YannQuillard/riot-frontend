@@ -59,11 +59,11 @@ button {
   display: block;
 }
 
-#pick_toplane {position: absolute; top: 3%;}
-#pick_jungle {position: absolute; top: 24%;}
-#pick_midd {position: absolute; top: 44%;}
-#pick_botlane {position: absolute; top: 63%;}
-#pick_support {position: absolute; top: 84%;}
+#pick_toplane {position: absolute; top: 0%;}
+#pick_jungle {position: absolute; top: 19%;}
+#pick_midd {position: absolute; top: 39%;}
+#pick_botlane {position: absolute; top: 59%;}
+#pick_support {position: absolute; top: 79%;}
 
 #toplane {
   background: url('../../assets/toplane-logo.png') no-repeat;
@@ -127,4 +127,44 @@ button {
 #sup_map {
     background: url('../../assets/Sup_map.png') no-repeat;
     background-size: contain;
+}
+
+.confirm_lane {
+  position: absolute;
+  width: 15vmin;
+  height: 4vmin;
+  background: var(--background);
+  border: 2px var(--gold) solid;
+  top: 15%;
+  left: 17.4%;
+
+  font-size: 1.8vmin;
+  text-decoration: none;
+  color: var(--gold);
+  line-height: 3.7vmin;
+}
+
+.confirm_lane:hover {
+  color: var(--background);
+  background: var(--gold);
+}
+
+.confirm_lane_top{
+  top: 10%;
+}
+
+.confirm_lane_jungle{
+  top: 30%;
+}
+
+.confirm_lane_middlane {
+  top: 50%;
+}
+
+.confirm_lane_botlane {
+  top: 70%;
+}
+
+.confirm_lane_support {
+  top: 90%;
 }
