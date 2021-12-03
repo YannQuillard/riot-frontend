@@ -2,7 +2,7 @@
 
 .container_FavNav {
     width: 100%;
-    height: 100%;
+    margin-bottom: 5vmin;
 }
 
 .PlayerFav_Text {
@@ -14,30 +14,28 @@
 }
 
 .container_FavNav_Nav {
-    margin-top: 5vmin;
     display:flex;
     align-items: center;
     justify-content: left;
-    width: 100%;
 }
 
 .FavNav_Search_Icon {
-    margin: 2vmin;
+    margin: 1vmin;
     margin-left: 5vmin;
-    width: 2vmin;
-    height: 2vmin;
+    width: 1.5vmin;
+    height: 1.5vmin;
     background:url('../../../assets/loupe.svg') no-repeat;
     background-size: contain;
 }
 
 .FavNav_Seach {
     width: 30vmin;
-    height: 5vmin;
+    height: 2vmin;
     margin-right: 3vmin;
     background-color: transparent;
     border: none;
-    border-bottom: var(--gold) 2px solid;
-    font-size: 2vmin;
+    border-bottom: var(--gold) 1px solid;
+    font-size: 1.5vmin;
     color:white;
 }
 
@@ -46,10 +44,10 @@
 }
 
 .FavNav_Icon {
-    width: 5vmin;
-    height: 5vmin;
-    margin-left: 1.5vmin;
-    margin-right: 1.5vmin;
+    width: 2vmin;
+    height: 2vmin;
+    margin-left: 1vmin;
+    margin-right: 1vmin;
     cursor: pointer;
     opacity: 50%;
 }

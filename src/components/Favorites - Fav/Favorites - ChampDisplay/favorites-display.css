@@ -1,0 +1,20 @@
+@import url(../../global-variable.css);
+
+.container_Fav_Display {
+    height: 60%;
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+
+    display:flex;
+    flex-wrap: wrap
+}
+
+.champion_Display {
+    width: 9vmin;
+    height: 9vmin;
+    margin: 2vmin;
+    background:red;
+}

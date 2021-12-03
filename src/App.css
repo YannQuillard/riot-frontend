@@ -1,3 +1,5 @@
+@import url(./components/global-variable.css);
+
 .App {
   text-align: center;
 }
@@ -16,4 +18,20 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+::-webkit-scrollbar {
+  background: var(--background);
+  width: 1vmin;
+}
+
+::-webkit-scrollbar-track {
+  background: #7B6C4E;
+  border-radius: 500px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 500px;
+}
+
 
