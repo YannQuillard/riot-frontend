@@ -8,6 +8,12 @@ body {
   background-color: #13171b;
 }
 
+
+.is_deactive_overflow {
+  overflow:hidden;
+}
+
+
 .App-header {
 
   min-height: 100vh;

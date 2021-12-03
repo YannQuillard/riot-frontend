@@ -5,6 +5,7 @@ import FavHeader from '../components/Favorites - Header/favorites-header';
 import FavDisplay from '../components/Favorites - Fav/Favorites - ChampDisplay/favorites-display';
 import PlayerFav from '../components/Favorites - Fav/Favorites-PlayerFav/favorites-playerFav';
 import FavNav from '../components/Favorites - Fav/Favorites - NavBar/favorites-navbar';
+import FavNext from '../components/Favorites - Fav/Favorites - Next Button/favorites-next';
 
 function Favorites() {
   return (
@@ -16,6 +17,7 @@ function Favorites() {
           <div className="FavRight"> 
             <FavNav />
             <FavDisplay />
+            <FavNext />
           </div>
         </div>
       </div>

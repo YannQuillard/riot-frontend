@@ -3,7 +3,7 @@
 .container_nav {
     position:absolute;
     width: 40vmin;
-    height: 150vmin;
+    height: 100%;
     background-color: var(--grey-nav);
     border-right: var(--gold) 2px solid;
 
@@ -65,5 +65,4 @@
     height: 0.15vmin;
     background-color: var(--gold);
 }
-
 
