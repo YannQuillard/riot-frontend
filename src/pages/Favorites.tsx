@@ -5,17 +5,20 @@ import FavHeader from '../components/Favorites - Header/favorites-header';
 import PlayerFav from '../components/Favorites - Fav/Favorites-PlayerFav/favorites-playerFav';
 import FavNav from '../components/Favorites - Fav/Favorites - NavBar/favorites-navbar';
 
-function Favorites() {
+export type MenuProps = {
+  username: string;
+}
+
+const Favorites: React.FC<MenuProps> = (props) => {
+  console.log(props.username);
   return (
-    <body>
-      <div className="App">
-        <FavHeader />
-        <div className="FavGlobal"> 
-          <PlayerFav />
-          <FavNav />
-        </div>
+    <div>
+      <FavHeader />
+      <div className="FavGlobal"> 
+        <PlayerFav />
+        <FavNav />
       </div>
-    </body>
+    </div>
   );
 }
 

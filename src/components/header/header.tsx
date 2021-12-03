@@ -1,14 +1,27 @@
-import React from 'react'
-import './header.css';
-import Hamburger from '../hamburger/hamburger';
+import React, { useState } from 'react'
 
-function Header() {
+import './Header.css';
+
+import Menu from '../Menu/Menu';
+import Hamburger from '../Hamburger/Hamburger';
+
+const Header = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false)
+
   return (
-    <div className="container_header">
-        <div className="hamburger-icon"><Hamburger /></div>
+    <div>
+      <div className={`toogle_off_nav ${isMenuOpen ? " is-active-toogle" : ""}`}></div>
+      <Menu isMenuOpen={isMenuOpen}/>
+      <div className="container_header">
+          <div className="hamburger-icon">
+            <Hamburger onOpen={(isOpen) => {
+              setMenuOpen(isOpen);
+            }}/>
+          </div>
         <div className="header-img"></div>
     </div>
-  )
+    </div>
+  );
 }
 
-export default Header
+export default Header;

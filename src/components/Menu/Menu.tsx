@@ -1,10 +1,13 @@
 import React from "react";
-import "./Nav.css";
+import "./Menu.css";
 
+export type MenuProps = {
+    isMenuOpen: boolean;
+}
 
-function Nav(){
+const Menu: React.FC<MenuProps> = (props) => {
     return(
-        <div className="container_nav">
+        <div className={`container_nav ${props.isMenuOpen ? " is-active-menu" : ""}`}>
             <nav className="navbar">
                 <ul className="navbar_links">
                     <li className="navbar_void"></li>
@@ -33,4 +36,4 @@ function Nav(){
     );
 }
 
-export default Nav
+export default Menu

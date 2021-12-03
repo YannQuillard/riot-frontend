@@ -1,7 +1,7 @@
 import React from "react";
-import "./accueil_championCard.css";
+import "./SuggestedCard.css";
 
-function Accueil_CC() {
+const SuggestedCard = () =>{
   return (
     <div className="container_accueil_champion_card">
       <p className="champion_ranking">1</p>
@@ -11,4 +11,4 @@ function Accueil_CC() {
   );
 }
 
-export default Accueil_CC;
+export default SuggestedCard;

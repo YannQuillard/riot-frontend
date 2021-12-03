@@ -1,28 +1,29 @@
 import { useState } from "react";
-import "./tabs.css";
-import Accueil_CC from "../Accueil - ChampionCard/accueil_championCard";
+import "./Suggested.css";
+import SuggestedCard from "../SuggestedCard/SuggestedCard";
 
-function Tabs() {
+
+const Suggested = () => {
   const [toggleState, setToggleState] = useState(1);
 
-  const toggleTab = (index) => {
+  const toggleTab = (index:any) => {
     setToggleState(index);
   };
 
   return (
     <div className="container_accueil_tabs">
       <div className="bloc-tabs">
-        <button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} id="toplane" onClick={() => toggleTab(1)}></button>
-        <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} id="jungle" onClick={() => toggleTab(2)}></button>
-        <button className={toggleState === 3 ? "tabs active-tabs" : "tabs"} id="middlane" onClick={() => toggleTab(3)}></button>
-        <button className={toggleState === 4 ? "tabs active-tabs" : "tabs"} id="botlane" onClick={() => toggleTab(4)}></button>
-        <button className={toggleState === 5 ? "tabs active-tabs" : "tabs"} id="support" onClick={() => toggleTab(5)}></button>
+        <button className={`tabs ${toggleState === 1 ? " active-tabs" : ""}`} id="toplane" onClick={() => toggleTab(1)}></button>
+        <button className={`tabs ${toggleState === 2 ? " active-tabs" : ""}`} id="jungle" onClick={() => toggleTab(2)}></button>
+        <button className={`tabs${toggleState === 3 ? " active-tabs" : ""}`} id="middlane" onClick={() => toggleTab(3)}></button>
+        <button className={`tabs ${toggleState === 4 ? " active-tabs" : ""}`} id="botlane" onClick={() => toggleTab(4)}></button>
+        <button className={`tabs ${toggleState === 5 ? " active-tabs" : ""}`} id="support" onClick={() => toggleTab(5)}></button>
       </div>
 
       <div className="content-tabs">
         <div  className={toggleState === 1 ? "content  active-content" : "content"}>
           <h1>Champions avec le plus haut winrate en <span id="w_l_lane"> Toplane</span></h1>
-          <Accueil_CC />
+          <SuggestedCard />
         </div>
         <div className={toggleState === 2 ? "content  active-content" : "content"}>
           <h1>Champions avec le plus haut winrate en <span id="w_l_lane"> Jungle</span></h1>
@@ -59,4 +60,4 @@ function Tabs() {
   );
 }
 
-export default Tabs;
+export default Suggested;

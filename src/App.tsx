@@ -1,23 +1,27 @@
-import React from 'react';
-import './App.css';
-import Accueil from './pages/Accueil';
-import Favorites from './pages/Favorites';
+import React, {useState} from 'react';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
-import HUD from './pages/HUD';
 
-function App() {
+import './App.css';
+
+import Home from './pages/Home';
+import Favorites from './pages/Favorites';
+import Header from './components/Header/Header';
+
+const App = () => {
+  const [username, setUsername] = useState("");
   return (
-    <body>
-      <div className="App">
-        <Router >
-          <HUD />
-          <Routes>
-          <Route path="/" element={<Accueil />} /> 
-          <Route path="/Favorites" element={<Favorites />} /> 
-          </Routes>
-        </Router>
-      </div>
-    </body>
+    <div className="App">
+      <Router >
+        <Header />
+        <Routes>
+          <Route path="/" element={
+          <Home onSubmit={(username) => {
+              setUsername(username);
+          }}/>} /> 
+          <Route path="/favorites" element={<Favorites username={username}/>} /> 
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
