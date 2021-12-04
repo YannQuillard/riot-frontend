@@ -13,18 +13,18 @@
 }
 
 .Ally_Player {
-    width: 17vmin;
-    height: 30vmin;
-    margin-right: 1.5vmin;
-    background: url('../../assets/Teemo-splash.jpeg') no-repeat;
+    width: 17%;
+    height: 15vw;
+    margin-right: 1vw;
+    background: url('../../assets/Big+.png') no-repeat;
     background-size: cover;
     background-position-x: 75%;
 }
 
 .Ennemy_Player {
-    width: 17vmin;
-    height: 30vmin;
-    margin-left: 1.5vmin;
+    width: 17%;
+    height: 15vw;
+    margin-left: 1vw;
     background: url('../../assets/Yasuo_Splash.jpg') no-repeat;
     background-size: cover;
     background-position-x: 75%;
@@ -40,10 +40,11 @@
 .Champ_Pick_Name {
     height: 100%;
     color: transparent;
-    line-height: 28vmin;
+    line-height: 15vw;
     margin:0;
     font-weight: bold;
     background-color: transparent;
+    font-size: 1vw;
 }
 
 

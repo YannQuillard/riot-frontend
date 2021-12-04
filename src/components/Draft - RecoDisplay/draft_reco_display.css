@@ -2,7 +2,7 @@
 
 .container_RecoDisplay {
     width: 100%;
-    height: 100%;
+    height: 6vw;
     display:flex;
 }
 
@@ -37,7 +37,8 @@
 .Champ_Name {
     height: 100%;
     color: transparent;
-    line-height: 12.5vmin;
+    line-height: 6vw;
+    font-size: 1vw;
     margin:0;
     font-weight: bold;
     background-color: transparent;

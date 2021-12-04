@@ -30,7 +30,7 @@
 }
   
 .draft_active_tabs  {
-  border-bottom: 3px var(--gold) solid;
+  border-bottom: 2px var(--gold) solid;
   opacity: 100%;
 }
     

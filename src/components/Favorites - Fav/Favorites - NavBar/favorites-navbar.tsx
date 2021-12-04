@@ -1,8 +1,6 @@
 import React from "react";
 import "./favorites-navbar.css";
 import NavButtons from "./favorites-buttons";
-import './check-doubleclick.js';
-
 
 function FavNav(){
     return(

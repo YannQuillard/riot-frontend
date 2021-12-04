@@ -14,10 +14,10 @@
 
 .All_Ally_Bans {
     width: 9vmin;
-    height: 9vmin;
+    height: 5.2vw;
     margin-right: 3vmin;
     background: url("../../assets/Add_Ban.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
     opacity: 50%;
 }
 
@@ -35,10 +35,10 @@
 
 .All_Ennemy_Bans {
     width: 9vmin;
-    height: 9vmin;
+    height: 5.2vw;
     margin-left: 3vmin;
     background: url("../../assets/Add_Ban.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
     opacity: 50%;
 }
 
@@ -52,7 +52,7 @@
     margin:0;
 
     color: white;
-    line-height: 8.5vmin;
+    line-height: 5vmin;
     font-size: 5vmin;
     font-weight: bold;
 }

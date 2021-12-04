@@ -5,6 +5,7 @@ import BanText from '../components/Draft - BanText/draft_bantext';
 import DraftIcons from '../components/Draft - Draft/draft_draft_icons';
 import Teams from '../components/Draft - Draft/draft_draft_teams';
 import DraftHeader from '../components/Draft - Header/draft-header';
+import PopUp from '../components/Draft - Pop-Up/draft_popup';
 import DraftTabs from '../components/Draft - Tabs/draft-tabs';
 import HUD from './HUD';
 
@@ -20,6 +21,7 @@ function Draft() {
         <Bans />
         <DraftIcons />
         <Teams />
+        <PopUp />
      </div>
    </body>
   );

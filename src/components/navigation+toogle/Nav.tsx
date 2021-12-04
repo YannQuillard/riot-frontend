@@ -5,7 +5,7 @@ import "./Nav.css";
 function Nav(){
     return(
         <div className="container_nav">
-            <nav className="navbar">
+            <nav className="navbar ">
                 <ul className="navbar_links">
                     <li className="navbar_void"></li>
                     <li className="navbar_item"  >

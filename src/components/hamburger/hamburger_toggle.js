@@ -1,8 +1,10 @@
-window.onload=function() {
+window.addEventListener('load', (event) => {
   var hamburger = document.querySelector(".hamburger");
   var menu = document.querySelector(".container_nav");
-  var toogle = this.document.querySelector(".toogle_off_nav")
+  var toogle = document.querySelector(".toogle_off_nav")
   var body = document.body
+
+  console.log(hamburger);
 
   hamburger.addEventListener("click", function() {
     menu.classList.toggle("is-active-menu");
@@ -23,4 +25,4 @@ window.onload=function() {
     toogle.classList.toggle("is-active-toogle");
     body.classList.remove("is_deactive_overflow")
   });
-}
+})
