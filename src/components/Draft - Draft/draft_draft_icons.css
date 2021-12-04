@@ -1,0 +1,55 @@
+@import url("../global-variable.css");
+
+.container_Icons {
+    display: flex;
+    width: 100%;
+    height: 5vmin;
+    padding-top: 4vmin;
+}
+
+.Ally_Icons, .Ennemy_Team {
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+
+.Icons_Ally {
+    width: 17vmin;
+    height: 4vmin;
+    margin-right: 1.5vmin;
+    background:green;
+    opacity: 50%;
+}
+
+.Icons_Ennemy {
+    width: 17vmin;
+    height: 4vmin;
+    margin-left: 1.5vmin;
+    background:yellow;
+    opacity: 50%;
+}
+
+.Top {
+    background: url('../../assets/toplane-logo.png') no-repeat center;
+    background-size: contain;
+}
+
+.Jungle {
+    background: url('../../assets/jungle-logo.png') no-repeat center;
+    background-size: contain;
+}
+
+.Mid {
+    background: url('../../assets/middlane-logo.png') no-repeat center;
+    background-size: contain;
+}
+
+.Bot {
+    background: url('../../assets/botlane-logo.png') no-repeat center;
+    background-size: contain;
+}
+
+.Support {
+    background: url('../../assets/support-logo.png') no-repeat center;
+    background-size: contain;
+}

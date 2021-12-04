@@ -59,41 +59,42 @@ button {
   display: block;
 }
 
-#pick_toplane {position: absolute; top: 0%;}
-#pick_jungle {position: absolute; top: 19%;}
-#pick_midd {position: absolute; top: 39%;}
-#pick_botlane {position: absolute; top: 59%;}
-#pick_support {position: absolute; top: 79%;}
+#pick_toplane {
+  position: absolute; 
+  top: 0%;}
+#pick_jungle {
+  position: absolute; 
+  top: 19%;}
+#pick_midd {
+  position: absolute; 
+  top: 39%;}
+#pick_botlane {
+  position: absolute; 
+  top: 59%;}
+#pick_support {
+  position: absolute; 
+  top: 79%;}
 
 #toplane {
   background: url('../../assets/toplane-logo.png') no-repeat;
   background-size: 7.5vmin;
-  background-position: center;
-}
-
+  background-position: center;}
 #jungle {
   background: url('../../assets/jungle-logo.png') no-repeat;
   background-size: 7.5vmin;
-  background-position: center;
-}
-
+  background-position: center;}
 #middlane {
   background: url('../../assets/middlane-logo.png') no-repeat;
   background-size: 7.5vmin;
-  background-position: center;
-}
-
+  background-position: center;}
 #botlane {
   background: url('../../assets/botlane-logo.png') no-repeat;
   background-size: 7.5vmin;
-  background-position: center;
-}
-
+  background-position: center;}
 #support {
   background: url('../../assets/support-logo.png') no-repeat;
   background-size: 7.5vmin;
-  background-position: center;
-}
+  background-position: center;}
 
 .lane_img {
     position: absolute;
@@ -106,28 +107,19 @@ button {
 
 #top_map {
     background: url('../../assets/Top_map.png') no-repeat;
-    background-size: contain;
-}
-
+    background-size: contain;}
 #jungle_map {
     background: url('../../assets/jungle_map.png') no-repeat;
-    background-size: contain;
-}
-
+    background-size: contain;}
 #mid_map {
     background: url('../../assets/Mid_map.png') no-repeat;
-    background-size: contain;
-}
-
+    background-size: contain;}
 #bot_map {
     background: url('../../assets/bot_map.png') no-repeat;
-    background-size: contain;
-}
-
+    background-size: contain;}
 #sup_map {
     background: url('../../assets/Sup_map.png') no-repeat;
-    background-size: contain;
-}
+    background-size: contain;}
 
 .confirm_lane {
   position: absolute;
@@ -136,7 +128,7 @@ button {
   background: var(--background);
   border: 2px var(--gold) solid;
   top: 15%;
-  left: 17.4%;
+  left: 17%;
 
   font-size: 1.8vmin;
   text-decoration: none;
@@ -150,21 +142,12 @@ button {
 }
 
 .confirm_lane_top{
-  top: 10%;
-}
-
+  top: 10%;}
 .confirm_lane_jungle{
-  top: 30%;
-}
-
+  top: 30%;}
 .confirm_lane_middlane {
-  top: 50%;
-}
-
+  top: 50%;}
 .confirm_lane_botlane {
-  top: 70%;
-}
-
+  top: 70%;}
 .confirm_lane_support {
-  top: 90%;
-}
+  top: 90%;}

@@ -3,6 +3,7 @@
     --black-header : #020B14;
     --grey-nav : #1A1F25;
     --background: #051015;
+    --name-display: hsl(199, 62%, 5%, 0.7);
 
     --blur : blur(5px);
 }

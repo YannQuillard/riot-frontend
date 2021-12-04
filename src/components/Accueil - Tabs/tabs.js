@@ -32,7 +32,7 @@ function Tabs() {
           </p>
         </div>
         <div className={toggleState === 3 ? "content  active-content" : "content"}>
-          <h1>Champions avec le plus haut winrate en <span id="w_l_lane"> Middlane</span></h1>
+          <h1>Champions avec le plus haut winrate en <span id="w_l_lane"> Midlane</span></h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
             nostrum rerum laudantium totam unde adipisci incidunt modi alias!

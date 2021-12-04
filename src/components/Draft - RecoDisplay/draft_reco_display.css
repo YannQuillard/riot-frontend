@@ -1,0 +1,51 @@
+@import url('..//global-variable.css');
+
+.container_RecoDisplay {
+    width: 100%;
+    height: 100%;
+    display:flex;
+}
+
+.Edge_Display, .Center_Display, .Middle_Display {
+    margin: 0 1vmin 0 1vmin;
+}
+
+.Edge_Display {
+    width: 15%;
+    background: url('../../assets/Teemo-splash.jpeg') no-repeat;
+    background-size: 150%;
+    background-position-x: 100%;
+    background-position-y: 25%;
+}
+
+.Center_Display {
+    width: 20%;
+    background: url('../../assets/Teemo-splash.jpeg') no-repeat;
+    background-size: 150%;
+    background-position-x: 100%;
+    background-position-y: 25%;
+}
+
+.Middle_Display {
+    width: 30%;
+    background: url('../../assets/Teemo-splash.jpeg') no-repeat;
+    background-size: 150%;
+    background-position-x: 100%;
+    background-position-y: 25%;
+}
+
+.Champ_Name {
+    height: 100%;
+    color: transparent;
+    line-height: 12.5vmin;
+    margin:0;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.Champ_Name:hover {
+    color: var(--gold);
+    background-color: var(--name-display);
+    border: 1px var(--gold) solid;
+    cursor: pointer;
+}
