@@ -41,5 +41,14 @@ body {
 }
 
 #HUD_NO_DISPLAY {
-  display: none;
+  position: absolute;
+  width:0%;
+  height:0%;
+  visibility: hidden;
+}
+
+.Separation_Draft_Page {
+  width: 100%;
+  height: 0.4vw;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 5%, rgba(244,205,136,1) 50%, rgba(255,255,255,0) 95%);
 }

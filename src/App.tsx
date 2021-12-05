@@ -4,6 +4,7 @@ import Accueil from './pages/Accueil';
 import Favorites from './pages/Favorites';
 import LegalMentions from './pages/LegalMentions';
 import PickLane from './pages/PickLane';
+import Draft from './pages/Draft';
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/Favorites" element={<Favorites />} /> 
           <Route path="/LegalMentions" element={<LegalMentions />} />
           <Route path="/PickLane" element={<PickLane />} />
+          <Route path="/Draft" element={<Draft />} />
           </Routes>
         </Router>
       </div>
