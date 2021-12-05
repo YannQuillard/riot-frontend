@@ -13,6 +13,11 @@ body {
   overflow:hidden;
 }
 
+.h1_activity {
+  color: white;
+  margin-bottom: 1vmin;
+  font-size: 2vw;
+}
 
 .App-header {
 
