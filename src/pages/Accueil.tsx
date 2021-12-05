@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
+import News from '../components/Accueil - News/accueil_news';
 import Inscription from '../components/Home-inscription/home-inscription';
-import Tabs from '../components/Accueil - Tabs/tabs.js';
 import HUD from './HUD';
 
 function Accueil() {
@@ -10,7 +10,8 @@ function Accueil() {
       <div className="App">
         <HUD />
         <Inscription />
-        <Tabs />
+        <h1 className="h1_activity"> Actualités</h1>
+        <News />
       </div>
     </body>
   );

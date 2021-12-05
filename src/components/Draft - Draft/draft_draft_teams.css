@@ -19,6 +19,7 @@
     background: url('../../assets/Big+.png') no-repeat;
     background-size: cover;
     background-position-x: 75%;
+    border: 1px var(--gold) solid;
 }
 
 .Ennemy_Player {
@@ -28,6 +29,7 @@
     background: url('../../assets/Yasuo_Splash.jpg') no-repeat;
     background-size: cover;
     background-position-x: 75%;
+    border: 1px var(--gold) solid;
 }
 
 .Champ_Pick_Name:hover {
