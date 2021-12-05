@@ -1,6 +1,6 @@
 import React from "react";
 import "./draft_bans.css";
-import "../Draft - Pop-Up/draft_pop_teams"
+
 
 
 function Bans(){
@@ -25,4 +25,4 @@ function Bans(){
     );
 }
 
-export default Bans
+export default Bans;

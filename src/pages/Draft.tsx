@@ -13,7 +13,7 @@ function Draft() {
   return (
    <body>
      <div className="App">
-       <span id="HUD_NO_DISPLAY">"<HUD /></span>
+        <span id="HUD_NO_DISPLAY">"<HUD /></span>
         <DraftHeader />
         <DraftTabs />
         <div className="Separation_Draft_Page"></div>
@@ -27,4 +27,4 @@ function Draft() {
   );
 }
 
-export default Draft
+export default Draft;

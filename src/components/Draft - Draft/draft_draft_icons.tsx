@@ -23,4 +23,4 @@ function DraftIcons(){
     );
 }
 
-export default DraftIcons
+export default DraftIcons;

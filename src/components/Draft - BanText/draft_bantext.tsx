@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./draft_bantext.css";
 
 
@@ -12,4 +11,4 @@ function BanText(){
     );
 }
 
-export default BanText
+export default BanText;

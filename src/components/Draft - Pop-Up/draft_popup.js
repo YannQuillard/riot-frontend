@@ -1,25 +1,21 @@
-// window.onload=function() { 
-//     var popupToogle = this.document.querySelector(".popup_Toogle");
-//     var popupDisplay = this.document.querySelector(".popup_display");
+import React from "react";
+import "./draft_popup.css";
+import "./draft_pop_teams.js"
+import FavDisplay from "../Favorites - Fav/Favorites - ChampDisplay/favorites-display";
+import FavNav from "../Favorites - Fav/Favorites - NavBar/favorites-navbar";
 
-//     document.querySelectorAll('.All_Ally_Bans').forEach(allyBan => {
-//         allyBan.addEventListener('click', event => {
-//             popupToogle.classList.toggle("is-active-toogle");
-//             popupDisplay.classList.toggle("is-active-toogle");
-//         })
-//       })
+function PopUp(){
+    return(
+        <div className="container_popup">
+            <div className="popup_Toogle"></div>
+            <div className="popup_display">
+                <h2> Choisissez un champion</h2>
+                <FavNav />
+                <FavDisplay />
+                <p> - Cliquez en dehors pour fermer -</p>
+            </div>
+        </div>
+    );
+}
 
-//     document.querySelectorAll('.All_Ennemy_Bans').forEach(ennemyBan => {
-//         ennemyBan.addEventListener('click', event => {
-//             popupToogle.classList.toggle("is-active-toogle");
-//             popupDisplay.classList.toggle("is-active-toogle");
-//         })
-//       })
-
-//     if(popupToogle) {
-//         popupToogle.addEventListener("click", function() {
-//             popupToogle.classList.toggle("is-active-toogle");
-//             popupDisplay.classList.toggle("is-active-toogle");
-//         });
-//     }
-// }
+export default PopUp;

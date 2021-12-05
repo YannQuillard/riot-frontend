@@ -24,4 +24,4 @@ function Teams(){
     );
 }
 
-export default Teams
+export default Teams;

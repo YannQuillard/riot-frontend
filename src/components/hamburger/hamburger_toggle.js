@@ -4,25 +4,26 @@ window.addEventListener('load', (event) => {
   var toogle = document.querySelector(".toogle_off_nav")
   var body = document.body
 
-  console.log(hamburger);
+  if(hamburger) {
+    hamburger.addEventListener("click", function() {
+      menu.classList.toggle("is-active-menu");
+      hamburger.classList.toggle("is-active");
+      toogle.classList.toggle("is-active-toogle");
 
-  hamburger.addEventListener("click", function() {
-    menu.classList.toggle("is-active-menu");
-    hamburger.classList.toggle("is-active");
-    toogle.classList.toggle("is-active-toogle");
+      if(body.classList.contains("is_deactive_overflow")){
+        body.classList.remove("is_deactive_overflow")
+      }
+      else{
+        body.classList.add("is_deactive_overflow")
+      }
+   });
+  }
 
-    if(body.classList.contains("is_deactive_overflow")){
-      body.classList.remove("is_deactive_overflow")
-    }
-    else{
-      body.classList.add("is_deactive_overflow")
-    }
-  });
-
+if(toogle) {
   toogle.addEventListener("click", function() {
     menu.classList.toggle("is-active-menu");
     hamburger.classList.toggle("is-active");
     toogle.classList.toggle("is-active-toogle");
     body.classList.remove("is_deactive_overflow")
-  });
-})
+  })
+}})
