@@ -37,6 +37,7 @@ const Favorites = () => {
 
   return (
       <div className="wrap">
+        <Header />
         <DndProvider backend={HTML5Backend}>
         <FavHeader />
         <div className="FavGlobal"> 
@@ -50,7 +51,6 @@ const Favorites = () => {
           </div>
         </div>
         </DndProvider>
-        <Header />
       </div>
   );
 }

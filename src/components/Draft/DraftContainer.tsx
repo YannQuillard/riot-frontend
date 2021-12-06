@@ -6,20 +6,38 @@ import "./DraftPopUp/DraftPopup.css";
 import "./DraftHeader/DraftHeader.css";
 import "./DraftBans/DraftBans.css";
 import ChampionsGrid from "../Champions/Champions";
-import { getChampions } from "../../api";
+import { getChampions, postBestChampions } from "../../api";
 import { Champions } from "../../decl";
 
 export type ChampionsState = {
     championsArray: Champions;
   }
+
+export type BestChampionsProps = {
+    maxNumber: number,
+    username: string,
+    lane: string,
+    pick?: {
+        team?: [],
+        enemy?: []
+    },
+    ban?: []
+}
+
+
   
 
 const DraftContainer : React.FC = (props) => {
+    const [banArray, setBanArray] = useState(Array<Number>());
+    const pickTeamArray:any= [];
+    const pickEnnemyArray:any = [];
+    const [isNewValue, setisNewvalue] = useState(Boolean);
     const [toggleState, setToggleState] = useState(1);
     const [isSelect, setIsSelect] = useState({
         image: "",
         riotId: 0
     })
+
     const [activeDrop, setActiveDrop] = useState("");
     const [isPopupActive, setPopupActive] = useState(false);
     const toggleTab = (index: number) => {
@@ -33,15 +51,30 @@ const DraftContainer : React.FC = (props) => {
 
     const setActive = (e:any) => {
         setPopupActive(!isPopupActive);
-        console.log(e.target.id)
         setActiveDrop(e.target.id);
-        
     }
 
     useEffect(() => {
-        console.log(activeDrop)
         if(activeDrop) {
-            let element = document.getElementById(activeDrop);
+
+            if(activeDrop.includes("Ban")) {
+                console.log('ban')
+
+                banChampion(banArray);
+                console.log(banArray);
+                setisNewvalue(!isNewValue)
+            }
+            else if(activeDrop.includes("Ally")) {
+                console.log('Ally')
+                pickEnnemyArray.push(isSelect.riotId);
+                setisNewvalue(!isNewValue)
+            }
+            else if(activeDrop.includes("Ennemy")) {
+                console.log('enemy')
+                pickTeamArray.push(isSelect.riotId);
+                setisNewvalue(!isNewValue)
+            }
+                let element = document.getElementById(activeDrop);
             if(element) {
                 element.style.background = `center / cover no-repeat url(${isSelect.image})`;
             }
@@ -49,15 +82,42 @@ const DraftContainer : React.FC = (props) => {
     
     }, [isSelect])
     useEffect(() => {
+        sumbitCompositions()
+    }, [isNewValue])
+    const banChampion = async (banTab: Array<Number>) => {
+
+        await setBanArray([banTab.push(isSelect.riotId)]);
+    }
+    const sumbitCompositions = async () => {
+        try {
+            const sendData = await postBestChampions(
+                {
+                    maxNumber: 5,
+                    username: "Patou9145",
+                    lane: "JGL",
+                    pick: {
+                        team: pickTeamArray,
+                        enemy: pickEnnemyArray
+                    },
+                    ban: banArray
+                }
+            );
+            console.log(sendData);
+            
+          } catch (error) {
+            alert(error);
+          }
+    }
+    useEffect(() => {
         fetchPages()
-      }, []);
+    }, []);
     return(
         <div>
             <div className="container_Draft_Header">
                 <p className="background_Draft_Header_Text"> VOTRE DRAFT </p>
                 <div className="background_Draft_Header"></div>
                 <a className="Global_Exit" type="submit" href="./">PARTIE TERMINÉE</a>
-                <a className="Return_Picklane" type="submit" href="./PickLane">&larr;</a>
+                <a className="Return_Picklane" type="submit" href="./pick-lane">&larr;</a>
             </div>
             <div className="container_draft_tabs">
                 <div className="draft_tabs">

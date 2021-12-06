@@ -4,8 +4,8 @@ export type BestChampion = {
     username: string,
     lane: string,
     pick?: {
-        team?: [],
-        enemy?: []
+        team: any[],
+        enemy: any[]
     },
-    ban?: []
+    ban: any[]
 };

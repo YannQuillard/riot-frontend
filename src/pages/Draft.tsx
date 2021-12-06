@@ -10,7 +10,7 @@ import PopUp from '../components/Draft/DraftPopUp/DraftPopup';
 import DraftTabs from '../components/Draft/DraftTabs/DraftTabs';
 import { BestChampion } from '../decl';
 import { postBestChampions } from '../api';
-import DraftContainer from '../components/Draft/Draft';
+import DraftContainer from '../components/Draft/DraftContainer';
 
 export type BestChampionsState = {
   maxNumber: number,
@@ -25,33 +25,6 @@ export type BestChampionsState = {
 
 
 const Draft = () => {
-  const [bestChampionState, setBestChampionState] = useState<BestChampionsState>({
-    maxNumber: 5,
-    username: "Patou9145",
-    lane: "JGL",
-    pick: {
-        team: [],
-        enemy: []
-    },
-    ban: []
-  });
-  const [isPopupOpen, setPopupOpen] = useState(false)
-  const closeMenu = () => {
-    setPopupOpen(!isPopupOpen);
-  }
-
-  useEffect(() => {
-    handleSelectSubmit();
-  })
-
-  const handleSelectSubmit = async () => {
-    const { maxNumber, username, lane, pick, ban } = bestChampionState;
-    try {
-      const BestChampion = await postBestChampions({ maxNumber, username, lane, pick, ban});
-    } catch (error) {
-      alert(error);
-    }
-  }
   /*return (
     <div className='wrap'>
         <DraftHeader />

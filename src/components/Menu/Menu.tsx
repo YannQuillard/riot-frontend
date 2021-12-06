@@ -17,15 +17,15 @@ const Menu: React.FC<MenuProps> = (props) => {
                     </li>
                     <div className="navbar_outline"></div>
                     <li className="navbar_item" >
-                        <a href="/pick-lane" className="navbar_link">NOUVELLE PARTIE</a>
+                        <a href="./pick-lane" className="navbar_link">NOUVELLE PARTIE</a>
                     </li>
                     <div className="navbar_outline"></div>
                     <li className="navbar_item"  >
-                        <a href="/favorites" className="navbar_link">VOS FAVORIS</a>
+                        <a href="./favorites" className="navbar_link">VOS FAVORIS</a>
                     </li>
                     <div className="navbar_outline"></div>
                     <li className="navbar_item">
-                        <a href="/legal-mentions" className="navbar_link">MENTIONS LÉGALES</a>
+                        <a href="./legal-mentions" className="navbar_link">MENTIONS LÉGALES</a>
                     </li>
                 </ul>
             </nav>
