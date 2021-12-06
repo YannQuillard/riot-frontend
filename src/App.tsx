@@ -1,27 +1,27 @@
 import React from 'react';
+import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+
 import './App.css';
-import Accueil from './pages/Accueil';
+
+import Home from './pages/Home';
 import Favorites from './pages/Favorites';
 import LegalMentions from './pages/LegalMentions';
 import PickLane from './pages/PickLane';
 import Draft from './pages/Draft';
-import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <body>
       <div className="App">
         <Router >
           <Routes>
-          <Route path="/" element={<Accueil />} /> 
-          <Route path="/Favorites" element={<Favorites />} /> 
-          <Route path="/LegalMentions" element={<LegalMentions />} />
-          <Route path="/PickLane" element={<PickLane />} />
-          <Route path="/Draft" element={<Draft />} />
+            <Route path="/" element={<Home />} /> 
+            <Route path="/favorites" element={<Favorites />} /> 
+            <Route path="/legal-mentions" element={<LegalMentions />} />
+            <Route path="/pick-lane" element={<PickLane />} />
+            <Route path="/draft" element={<Draft />} />
           </Routes>
         </Router>
       </div>
-    </body>
   );
 }
 

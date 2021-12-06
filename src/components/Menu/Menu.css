@@ -1,0 +1,69 @@
+@import url('../global-variable.css');
+
+.container_nav {
+    position: fixed;
+    width: 40vmin;
+    height: 150vmin;
+    background-color: var(--grey-nav);
+    border-right: var(--gold) 2px solid;
+
+    left: -100vmin;
+    transition: left 0.8s ease;
+
+    z-index: 2;
+}
+
+.container_nav.is-active-menu {
+    left: 0;
+    transition: left 0.8s ease;
+}
+
+.navbar {
+    width: 40vmin;
+}
+
+.navbar_links {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar_item {
+    width:40vmin;
+    height : 12vmin;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_item:hover {
+    background-color:#1f2327;
+}
+
+.navbar_void {
+    width:40vmin;
+    height : 10vmin;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_link {
+    width: 40vmin;
+    height : 5vmin;
+    margin-left: 3vmin;
+    font-size: 2.2vmin;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_outline {
+    width: 35vmin;
+    height: 0.15vmin;
+    background-color: var(--gold);
+}
+
+

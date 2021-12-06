@@ -1,0 +1,53 @@
+@import url("../global-variable.css");
+
+.container_Teams {
+    display: flex;
+    width: 100%;
+    height: 30vmin;
+}
+
+.My_Team, .Ennemy_Team {
+    width:50%;
+    display: flex;
+    justify-content: center;
+}
+
+.Ally_Player {
+    width: 17%;
+    height: 15vw;
+    margin-right: 1vw;
+    background: url('../../assets/Big+.png') no-repeat;
+    background-size: cover;
+    background-position-x: 75%;
+    border: 1px var(--gold) solid;
+}
+
+.Ennemy_Player {
+    width: 17%;
+    height: 15vw;
+    margin-left: 1vw;
+    background: url('../../assets/Yasuo_Splash.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: 75%;
+    border: 1px var(--gold) solid;
+}
+
+.Champ_Pick_Name:hover {
+    color: var(--gold);
+    background-color: var(--name-display);
+    border: 1px var(--gold) solid;
+    cursor: pointer;
+}
+
+.Champ_Pick_Name {
+    height: 100%;
+    color: transparent;
+    line-height: 15vw;
+    margin:0;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 1vw;
+}
+
+
+

@@ -1,0 +1,51 @@
+@import url('../../global-variable.css');
+
+.popup_Toogle {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    
+    backdrop-filter: var(--blur);
+
+    z-index: 1;
+    display: none;
+}
+
+.popup_Toogle.is-active-toogle {
+    display: block;
+}
+
+.popup_display {
+    position:absolute;
+    width: 55%;
+    height: 40vw;
+    top: 5vw;
+    left: 25%;
+
+    z-index: 1;
+    display: none;
+    background:var(--background);
+    border: 2px var(--gold) solid;
+}
+
+.popup_display.is-active-toogle {
+    display: block;
+}
+
+.popup_display h2 {
+    color: white;
+    font-size: 5vmin;
+    padding-bottom: 2vw;
+} 
+
+.popup_display h1 {
+    display: none;
+}
+
+.popup_display p {
+    color: white;
+    font-size: 2vmin;
+    padding-top: 2vw;
+}
+

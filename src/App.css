@@ -52,3 +52,9 @@ body {
   height: 0.4vw;
   background: linear-gradient(90deg, rgba(255,255,255,0) 5%, rgba(244,205,136,1) 50%, rgba(255,255,255,0) 95%);
 }
+
+.h1_activity {
+  color: white;
+  margin-bottom: 1vmin;
+  font-size: 2vw;
+}

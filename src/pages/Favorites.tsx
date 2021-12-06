@@ -1,29 +1,57 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../App.css';
-import '../components/Favorites - Fav/FavGlobal.css';
-import FavHeader from '../components/Favorites - Header/favorites-header';
-import FavDisplay from '../components/Favorites - Fav/Favorites - ChampDisplay/favorites-display';
-import PlayerFav from '../components/Favorites - Fav/Favorites-PlayerFav/favorites-playerFav';
-import FavNav from '../components/Favorites - Fav/Favorites - NavBar/favorites-navbar';
-import FavNext from '../components/Favorites - Fav/Favorites - Next Button/favorites-next';
-import HUD from './HUD';
+import '../components/Favorites/FavoritesGlobal.css';
+import FavHeader from '../components/Favorites/FavoritesHeader/FavoritesHeader';
+import FavDisplay from '../components/Champions/Champions';
+import FavoritesPlayer from '../components/Favorites/FavoritesPlayer/FavoritesPlayer';
+import FavoritesNav from '../components/Favorites/FavoritesNav/FavoritesNavbar';
+import FavNext from '../components/Favorites/FavoritesNextButton/FavoritesNext';
+import { DndProvider } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import { getChampions } from "../api";
+import { Champion, Champions } from "../decl";
 
-function Favorites() {
+
+import Header from '../components/Header/Header';
+
+export type ChampionsState = {
+  championsArray: Champions;
+}
+
+export type ChampionProps = {
+  riotId: number;
+  name: string;
+  image: string;
+}
+
+const Favorites = () => {
+  const [champions, setChampions] = useState<ChampionsState>({championsArray: []});
+    const fetchPages = async () => {
+        const fetchedChampions = await getChampions();
+        setChampions({ championsArray: fetchedChampions });
+    };
+
+    useEffect(() => {
+        fetchPages()
+      }, []);
+
   return (
-    <body>
-      <div className="App">
-        <HUD />
+      <div className="wrap">
+        <DndProvider backend={HTML5Backend}>
         <FavHeader />
         <div className="FavGlobal"> 
-          <PlayerFav />
+          <FavoritesPlayer championsArray={champions.championsArray}/>
           <div className="FavRight"> 
-            <FavNav />
-            <FavDisplay />
+            <FavoritesNav/>
+            <FavDisplay championsArray={champions.championsArray} onSelect={(riotId, image) => {
+                    console.log('test')
+                    }}/>
             <FavNext />
           </div>
         </div>
+        </DndProvider>
+        <Header />
       </div>
-    </body>
   );
 }
 
